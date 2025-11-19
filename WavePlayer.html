@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom Waveform Player</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f0f0f0;
+    color: #333;
+  }
+  h1 { text-align: center; }
+  input, textarea, button {
+    font-size: 1rem;
+    margin: 5px 0;
+    width: 100%;
+  }
+  textarea { height: 80px; }
+  label { font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Custom Waveform Player</h1>
+
+<label for="formula">Enter your waveform formula (use "t" as time in seconds):</label>
+<textarea id="formula">(2/Math.PI)*Math.asin(Math.sin(2*t*vf))*va + (2/Math.PI)*Math.tan(Math.sin(t*vf))*va*vp</textarea>
+
+<label for="vf">Frequency (vf, Hz):</label>
+<input type="number" id="vf" value="2000" step="0.1">
+
+<label for="va">Amplitude (va, 0-1):</label>
+<input type="number" id="va" value="0.5" step="0.1" min="0" max="1">
+
+<label for="vp">Parameter (vp):</label>
+<input type="number" id="vp" value="1" step="0.1">
+
+<button id="playBtn">Play Wave</button>
+<button id="stopBtn">Stop Wave</button>
+
+<br/>
+<p>Use ** instead of ^ for exponents</p>
+
+<script>
+let audioCtx;
+let bufferSource;
+
+document.getElementById("playBtn").addEventListener("click", playWave);
+document.getElementById("stopBtn").addEventListener("click", stopWave);
+
+function playWave() {
+  stopWave(); // Stop previous wave if any
+  const formula = document.getElementById("formula").value;
+  const vf = parseFloat(document.getElementById("vf").value);
+  const va = parseFloat(document.getElementById("va").value);
+  const vp = parseFloat(document.getElementById("vp").value);
+
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  const sampleRate = audioCtx.sampleRate;
+  const duration = 2; // seconds
+  const buffer = audioCtx.createBuffer(1, sampleRate * duration, sampleRate);
+  const data = buffer.getChannelData(0);
+
+  for (let i = 0; i < data.length; i++) {
+    const t = i / sampleRate;
+    try {
+      // eslint-disable-next-line no-eval
+      let y = eval(formula);
+      // Clamp y to [-1, 1] to prevent clipping
+      if (y > 1) y = 1;
+      if (y < -1) y = -1;
+      data[i] = y;
+    } catch (e) {
+      data[i] = 0;
+    }
+  }
+
+  bufferSource = audioCtx.createBufferSource();
+  bufferSource.buffer = buffer;
+  bufferSource.connect(audioCtx.destination);
+  bufferSource.start();
+}
+
+function stopWave() {
+  if (bufferSource) {
+    bufferSource.stop();
+    bufferSource.disconnect();
+  }
+}
+</script>
+</body>
+</html>
