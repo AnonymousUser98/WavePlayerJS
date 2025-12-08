@@ -211,3 +211,13 @@
 **GGB:** `sin(tan(cos(t vf)) sgn(sin(t*3 vf))) va`
 
 **JS:** `Math.sin(Math.tan(Math.cos(t*vf))*Math.sign(Math.sin(t*3*vf)))*va`
+
+
+
+## Noisy Infinity Wave
+
+**GGB:** `sin(tan(t vf) sgn(cos(t*99999 vf))) va`
+
+**JS:** `Math.sin(Math.tan(t*vf)*Math.sign(Math.cos(t*99999*vf)))*va`
+
+
