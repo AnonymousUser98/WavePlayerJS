@@ -1,4 +1,4 @@
-#### Common Waves
+## Common Waves
 
 **Sine Wave:** Math.sin(t\*vf)\*va
 
@@ -10,7 +10,7 @@
 
 
 
-#### Hybrid Wave
+## Hybrid Wave
 
 **GGB:** (sin(t vf)\*((2)/(π)) sin^(-1)(sin(2 t vf))+sgn(sin(t vf)))\*((1.84)/(π)) va
 
@@ -18,7 +18,7 @@
 
 
 
-#### Modified Hybrid Wave
+## Modified Hybrid Wave
 
 **GGB:** ((sin(t vf)\*((2)/(π)) sin^(-1)(sin(2 t vf))+sgn(sin(t vf)))\*((0.54)/(π))+(sin(t vf)\*((2)/(π)) sin^(-1)((sin(2 t vf))^(vp))))\*va
 
@@ -28,7 +28,7 @@
 
 
 
-#### Mountain Wave
+## Mountain Wave
 
 **GGB**: ((2)/(π)) sin^(-1)(sin(t\*2 vf)) va+((2)/(π)) tan(sin(t vf)) va vp
 
@@ -36,7 +36,7 @@
 
 
 
-#### Cosine Sine Wave
+## Cosine Sine Wave
 
 **GGB:** sin(cos(t vf) vp) va
 
@@ -44,7 +44,7 @@
 
 
 
-#### Spike Wave
+## Spike Wave
 
 **GGB:** (sin(t vf))^(vp) va
 
@@ -54,7 +54,7 @@
 
 
 
-#### Costan Wave
+## Costan Wave
 
 **GGB:** cos(tan(t vf) vp) va
 
@@ -62,7 +62,7 @@
 
 
 
-#### Sintan Wave
+## Sintan Wave
 
 **GGB:** sin(tan(t vf)) va
 
@@ -70,7 +70,7 @@
 
 
 
-#### Pulse Wave
+## Pulse Wave
 
 **GGB:** sin(cos(t vf) (5+vp-1)) sin^(7)(t vf) va
 
@@ -78,7 +78,7 @@
 
 
 
-#### Noisy Sine Wave
+## Noisy Sine Wave
 
 **GGB:** (((2)/(π)) sin^(-1)(sin(t vf) cos(tan(t vf)))+sin(t vf))\*((va)/(2))
 
@@ -86,7 +86,7 @@
 
 
 
-#### Batman Wave
+## Batman Wave
 
 **GGB:** ((sin^(-1)(sin(t vf vp)))/(tan(t vf))) va
 
@@ -96,7 +96,7 @@
 
 
 
-#### Parametric Trig Wave
+## Parametric Trig Wave
 
 **GGB:** sinh^(-1)(tan(cos(t vf+cos(t vp vf)))) va
 
@@ -104,7 +104,7 @@
 
 
 
-#### Insect Wave
+## Insect Wave
 
 **GGB:** sin(tanh^(-1)(sin(t vf))) va
 
@@ -114,7 +114,7 @@
 
 
 
-#### Needle Wave
+## Needle Wave
 
 **GGB:** ((sin(tanh^(-1)(sin(t \* vf))) \* va sinh^(-1)(tan(cos(t \* vf + cos(t \* vf)))) \* va)/(sin(cos(t \* vf)) \* va))
 
@@ -122,7 +122,7 @@
 
 
 
-#### Nested Sine Wave
+## Nested Sine Wave
 
 **GGB:** sin(t vf+sin(t vf vp)) va
 
@@ -132,7 +132,7 @@
 
 
 
-#### Nested Cosine Sine Wave
+## Nested Cosine Sine Wave
 
 **GGB:** sin(cos(t \* vf) \* vp) \* va sin(t \* vf + sin(t \* vf \* vp)) \* va
 
@@ -142,7 +142,7 @@
 
 
 
-#### Fin Wave
+## Fin Wave
 
 **GGB:** ((2)/(π)) sin^(-1)(sin(t vf))\*((2)/(π)) cos^(-1)(cos(t vf)) va
 
@@ -150,7 +150,7 @@
 
 
 
-#### Trisine Wave
+## Trisine Wave
 
 **GGB:** sin^(-1)(sin(2 t vf) sin(t vf))+sin^(-1)(sin(2 t vf)) sin^(-1)(sin(t vf\*5)) va
 
@@ -158,7 +158,7 @@
 
 
 
-#### Trisine Mountain Wave
+## Trisine Mountain Wave
 
 **GGB:** (sin^(-1)(sin(t vf+sin(t vf)))+sin^(-1)(cos(t vf-5))) va
 
@@ -166,7 +166,7 @@
 
 
 
-#### Lightning Wave
+## Lightning Wave
 
 **GGB:** (sin^(5)(t vf\*2)+sin(t vf)-sin^(-1)(sin(t vf\*2)) sin^(-1)(cos(t vf\*2))-sin(tan(t vf\*9))) va
 
@@ -174,7 +174,7 @@
 
 
 
-#### Drip Wave
+## Drip Wave
 
 **GGB:** (((2)/(π)) sin^(-1)(sin(t vf))+sin^(19)(t vf)) va
 
@@ -182,7 +182,7 @@
 
 
 
-#### Bird Wave
+## Bird Wave
 
 **GGB:** ((2)/(π)) sin^(-1)(sin(2 t vf)) sin(t vf)\*1.4 va
 
@@ -190,9 +190,16 @@
 
 
 
-#### M/W Wave
+## M/W Wave
 
 **GGB:** sin(tan^(-1)(sin(t vf))+sin^(-1)(sin(3 t vf))) va
 
 **JS:** (Math.sin(Math.atan(Math.sin(t\*vf))+Math.asin(Math.sin(3\*t\*vf))))\*va
 
+
+
+## Bird Dip Wave
+
+**GGB:** sin(t vf) cos^(2)(tan(t vf) cos(t\*3 vf)) va
+
+**JS:** Math.sin(t\*vf)\*(Math.cos(Math.tan(t\*vf)\*Math.cos(t\*3\*vf))\*\*2)\*va
