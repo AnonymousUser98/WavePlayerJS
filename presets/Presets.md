@@ -176,9 +176,9 @@
 
 ## Drip Wave
 
-**GGB:** `(((2)/(π)) sin^(-1)(sin(t vf))+sin^(19)(t vf)) va`
+**GGB:** `(((2)/(π)) sin^(-1)(sin(t vf))+sin^(19)(t vf))*((va)/(2))`
 
-**JS:** `(((2)/(Math.PI))*Math.asin(Math.sin(t*vf))+(Math.sin(t*vf))^19)*va`
+**JS:** `(((2)/(Math.PI))*Math.asin(Math.sin(t*vf))+(Math.sin(t*vf))^19)*((va)/(2))`
 
 
 
@@ -219,6 +219,7 @@
 **GGB:** `sin(tan(t vf) sgn(cos(t*99999 vf))) va`
 
 **JS:** `Math.sin(Math.tan(t*vf)*Math.sign(Math.cos(t*99999*vf)))*va`
+
 
 
 
