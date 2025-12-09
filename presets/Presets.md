@@ -168,9 +168,9 @@
 
 ## Lightning Wave
 
-**GGB:** `(sin^(5)(t vf*2)+sin(t vf)-sin^(-1)(sin(t vf*2)) sin^(-1)(cos(t vf*2))-sin(tan(t vf*9))) va`
+**GGB:** `(sin^(5)(t vf*2)+sin(t vf)-sin^(-1)(sin(t vf*2)) sin^(-1)(cos(t vf*2))-sin(tan(t vf*9)))*((va)/(3))`
 
-**JS:** `((Math.sin(t*vf*2)**5)+Math.sin(t*vf)-Math.asin(Math.sin(t*vf*2))*Math.asin(Math.cos(t*vf*2))-Math.sin(Math.tan(t*vf*9)))*va`
+**JS:** `((Math.sin(t*vf*2)**5)+Math.sin(t*vf)-Math.asin(Math.sin(t*vf*2))*Math.asin(Math.cos(t*vf*2))-Math.sin(Math.tan(t*vf*9)))*((va)/(3))`
 
 
 
@@ -219,5 +219,6 @@
 **GGB:** `sin(tan(t vf) sgn(cos(t*99999 vf))) va`
 
 **JS:** `Math.sin(Math.tan(t*vf)*Math.sign(Math.cos(t*99999*vf)))*va`
+
 
 
