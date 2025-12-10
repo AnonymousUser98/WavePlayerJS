@@ -5,9 +5,10 @@ ChatGPT helped me with a lot of this program.
 <!-- OUTDATED SCREENSHOTS - COMMENTED OUT
 <img width="1269" height="800" alt="screenshot" src="https://github.com/user-attachments/assets/58fcd5a6-5bf1-456f-a9f9-2bff6e8651fe" />
 <img width="1339" height="652" alt="screenshot" src="https://github.com/user-attachments/assets/adde6428-6801-414c-bbeb-04a5ddc296a7" />
+<img width="1340" height="639" alt="screenshot" src="https://github.com/user-attachments/assets/b3489d1c-963b-4fa1-9129-602e6fe0106d" />
 -->
 
-<img width="1340" height="639" alt="screenshot" src="https://github.com/user-attachments/assets/b3489d1c-963b-4fa1-9129-602e6fe0106d" />
+<img width="1346" height="642" alt="screenshot" src="https://github.com/user-attachments/assets/5d480c60-f685-45ba-acf7-9e542c6893d3" />
 
 
 ## Using the Program
