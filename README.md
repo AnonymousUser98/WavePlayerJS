@@ -1,12 +1,14 @@
 # WavePlayerJS
-WavePlayerJS is a simple web app that allows you to enter a math formula for a custom waveform and hear what it sounds like. Everything is in a single `.html` file (including the CSS and JavaScript), so you don't need to download multiple files (and you can just save the program in your Downloads folder if you want - it doesn't create other files).\
+WavePlayerJS is a simple web app that allows you to enter a math formula for a custom waveform and hear what it sounds like. If you want to convert a wave equation to audio, then this app is for you. I made this because I couldn't find any programs like this and I thought it should exist.\
 ChatGPT helped me with a lot of this program.
 
-<!-- OUTDATED SCREENSHOT - COMMENTED OUT
+<!-- OUTDATED SCREENSHOTS - COMMENTED OUT
 <img width="1269" height="800" alt="screenshot" src="https://github.com/user-attachments/assets/58fcd5a6-5bf1-456f-a9f9-2bff6e8651fe" />
+<img width="1339" height="652" alt="screenshot" src="https://github.com/user-attachments/assets/adde6428-6801-414c-bbeb-04a5ddc296a7" />
 -->
 
-<img width="1339" height="652" alt="screenshot" src="https://github.com/user-attachments/assets/adde6428-6801-414c-bbeb-04a5ddc296a7" />
+<img width="1340" height="639" alt="screenshot" src="https://github.com/user-attachments/assets/b3489d1c-963b-4fa1-9129-602e6fe0106d" />
+
 
 ## Using the Program
 Type or paste your wave formula into the big text box. Make sure you include the variables `vf` and `va` in your formula (these are for setting frequency and amplitude). If you want to, you can also include an optional parameter variable in your formula with `vp`. This can do whatever you want, but it's usually used to change the shape of the wave.
