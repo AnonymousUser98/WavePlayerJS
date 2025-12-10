@@ -77,6 +77,7 @@ const themes = [
 		"id": "light",
 		"name": "Default",
 		"text": "#333",
+		"boxtext": "#333",
 		"bg-main": "#f0f0f0",
 		"bg-btn": "#fcfcfc",
 		"bg-menu": "#eee",
@@ -90,6 +91,7 @@ const themes = [
 		"id": "dark",
 		"name": "Dark Mode",
 		"text": "#f0f0f0",
+		"boxtext": "#f0f0f0",
 		"bg-main": "#232323",
 		"bg-btn": "#323232",
 		"bg-menu": "#454545",
@@ -103,6 +105,7 @@ const themes = [
 		"id": "blue",
 		"name": "True Blue",
 		"text": "#f0f0f0",
+		"boxtext": "#f0f0f0",
 		"bg-main": "#055ae3",
 		"bg-btn": "#4287f5",
 		"bg-menu": "#356bc4",
@@ -116,6 +119,7 @@ const themes = [
 		"id": "highcon",
 		"name": "High Contrast",
 		"text": "#ff5",
+		"boxtext": "#ff5",
 		"bg-main": "#000",
 		"bg-btn": "#000",
 		"bg-menu": "#000",
@@ -124,6 +128,34 @@ const themes = [
 		"box-border": "2px solid #ff5",
 		"btn-border-clr": "#fff",
 		"btn-radius": "10px"
+	},
+	{
+		"id": "rainbow",
+		"name": "Crazy Colours",
+		"text": "#ff0",
+		"boxtext": "#ff0",
+		"bg-main": "#11d",
+		"bg-btn": "#15bb15",
+		"bg-menu": "#a37",
+		"textbox": "#f21",
+		"menu-border": "3px solid #f0f",
+		"box-border": "2px solid #0ff",
+		"btn-border-clr": "#cc7522",
+		"btn-radius": "10px"
+	},
+	{
+		"id": "smbnes",
+		"name": "Itsumi 1-1",
+		"text": "#b92716",
+		"boxtext": "#138400",
+		"bg-main": "#6481f9",
+		"bg-btn": "#f0ac3f",
+		"bg-menu": "#f0ac3f",
+		"textbox": "#f0ac3f",
+		"menu-border": "3px solid #b92716",
+		"box-border": "5px solid #b92716",
+		"btn-border-clr": "#b92716",
+		"btn-radius": "0px"
 	}
 ];
 
