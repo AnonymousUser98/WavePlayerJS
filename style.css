@@ -68,7 +68,7 @@ button {
 
 #dark-button {
 	position: absolute;
-	width: 120px;
+	width: 150px;
 	top: 41px;
 	right: 28px;
 }
@@ -83,7 +83,7 @@ button {
 	display: none;
 	width: 120px;
 	position: fixed;
-	right: 180px;
+	right: 200px;
 	top: 30px;
 }
 
