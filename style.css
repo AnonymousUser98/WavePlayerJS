@@ -1,5 +1,6 @@
 :root {
 	--text: #333;
+	--boxtext: #333;
 	--bg-main: #f0f0f0;
 	--bg-btn: #fcfcfc;
 	--bg-menu: #eee;
@@ -24,7 +25,7 @@ input, textarea, button {
 	margin: 5px 0;
 	width: 100%;
 	box-sizing: border-box;
-	color: var(--text);
+	color: var(--boxtext);
 }
 
 textarea, input {
