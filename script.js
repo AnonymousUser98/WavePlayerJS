@@ -111,6 +111,19 @@ const themes = [
 		"box-border": "1px solid #127",
 		"btn-border-clr": "#125",
 		"btn-radius": "10px"
+	},
+	{
+		"id": "highcon",
+		"name": "High Contrast",
+		"text": "#ff5",
+		"bg-main": "#000",
+		"bg-btn": "#000",
+		"bg-menu": "#000",
+		"textbox": "#000",
+		"menu-border": "3px solid #ff5",
+		"box-border": "2px solid #ff5",
+		"btn-border-clr": "#fff",
+		"btn-radius": "10px"
 	}
 ];
 
