@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WavePlayerJS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="dark-button">
+			<button id="theme-button">Switch Theme</button>
+		</div>
+		<h1>WavePlayerJS</h1>
+	</header>
+
+	<!-- THEME MENU -->
+	<div id="themeMenu" class="menu">
+		<div class="menu-item" data-value="light">Default</div>
+		<div class="menu-item" data-value="dark">Dark Mode</div>
+	</div>
+
+	<!-- MAIN BODY -->
+	<label for="formula">Enter your waveform formula (use "t" as time in seconds):</label>
+	<textarea id="formula" spellcheck="false">(2/Math.PI)*Math.asin(Math.sin(2*t*vf))*va + (2/Math.PI)*Math.tan(Math.sin(t*vf))*va*vp</textarea>
+
+	<label for="vf">Frequency (vf, Hz):</label>
+	<input type="number" id="vf" value="2000" step="1">
+
+	<label for="va">Amplitude (va, 0-1):</label>
+	<input type="number" id="va" value="0.5" step="0.1" min="0" max="1">
+
+	<label for="vp">Parameter (vp):</label>
+	<input type="number" id="vp" value="1" step="1">
+
+	<div style="display: flex; margin-top: 8px">
+	<div class="buttons">
+		<div class="main-buttons">
+			<button id="playBtn">Play Wave</button>
+			<button id="stopBtn">Stop Wave</button>
+		</div>
+		<button id="loadPresetBtn" style="margin-left: auto;">Load Preset</button>
+	</div>
+	</div>
+	
+	<div id="presetMenu" class="menu">
+		<div class="menu-item" data-value="Math.sin(t*vf)*va">Sine Wave</div>
+		<div class="menu-item" data-value="Math.sign(Math.sin(t*vf))*va">Square Wave</div>
+		<div class="menu-item" data-value="(2/Math.PI)*Math.asin(Math.sin(2*t*vf))*va">Triangle Wave</div>
+		<div class="menu-item" data-value="((Math.sin(t*vf)*((2)/(Math.PI))*Math.asin(Math.sin(2*t*vf))+Math.sign(Math.sin(t*vf)))*((1.84)/(Math.PI)))*va">Hybrid Wave</div>
+		<div class="menu-item" data-value="(2/Math.PI)*Math.asin(Math.sin(2*t*vf))*va + (2/Math.PI)*Math.tan(Math.sin(t*vf))*va*vp">Mountain Wave</div>
+		<div class="menu-item" data-value="Math.sin(Math.atanh(Math.sin(t*vf)))*va">Insect Wave</div>
+		<div class="menu-item" data-value="((Math.sin(Math.cos(t*vf)*(5+vp-1)))*((Math.sin(t*vf)**7)))*va">Pulse Wave</div>
+		<div class="menu-item" data-value="((Math.sin(Math.atanh(Math.sin(t*vf)))*va*Math.asinh(Math.tan(Math.cos(t*vf+Math.cos(t*vf))))*va)/(Math.sin(Math.cos(t*vf))*va))">Needle Wave</div>
+		<div class="menu-item" data-value="(((2)/(Math.PI))*Math.asin(Math.sin(t*vf)))*(((2)/(Math.PI))*Math.acos(Math.cos(t*vf)))*va">Fin Wave</div>
+		<div class="menu-item" data-value="Math.asin(Math.sin(2*t*vf)*Math.sin(t*vf))+Math.asin(Math.sin(2*t*vf))*Math.asin(Math.sin(t*vf*5))*va">Trisine Wave</div>
+		<div class="menu-item" data-value="((Math.sin(t*vf*2)**5)+Math.sin(t*vf)-Math.asin(Math.sin(t*vf*2))*Math.asin(Math.cos(t*vf*2))-Math.sin(Math.tan(t*vf*9)))*((va)/(3))">Lightning Wave</div>
+		<div class="menu-item" data-value="(((2)/(Math.PI))*Math.asin(Math.sin(t*vf))+(Math.sin(t*vf))^19)*((va)/(2))">Drip Wave</div>
+		<div class="menu-item" data-value="(((2)/(Math.PI))*Math.asin(Math.sin(2*t*vf))*Math.sin(t*vf)*1.4)*va">Bird Wave</div>
+		<div class="menu-item" data-value="Math.sin(Math.tan(t*vf)*Math.sign(Math.cos(t*99999*vf)))*va">Noisy Infinity Wave</div>
+	</div>
+
+	<br/>
+	<p>Use ** instead of ^ for exponents</p>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+:root {
+	--text: #333;
+	--bg-main: #f0f0f0;
+	--bg-btn: #fcfcfc;
+	--bg-menu: #eee;
+	--textbox: white;
+	--menu-border: 1px solid #aaa;
+	--box-border: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	--btn-border-clr: buttonborder;
+	--btn-radius: 10px
+}
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	background: var(--bg-main);
+	color: var(--text);
+}
+
+h1 { text-align: center; }
+
+input, textarea, button {
+	font-size: 1rem;
+	margin: 5px 0;
+	width: 100%;
+	box-sizing: border-box;
+	color: var(--text);
+}
+
+textarea, input {
+	background: var(--textbox);
+	border: var(--box-border);
+}
+
+textarea { height: 80px; }
+label { font-weight: bold; }
+div { width: 100%; }
+
+button {
+	border-radius: var(--btn-radius);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 120px;
+	background: var(--bg-btn);
+	border-color: var(--btn-border-clr);
+}
+
+.buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex: 0 0 100%
+}
+
+.buttons .main-buttons{
+	display: flex;
+	flex: 4;
+	gap: 0.5rem;
+	flex-direction: row;
+	justify-content: start;
+}
+
+.buttons .load-preset {
+	display: flex;
+	gap: 0;
+	justify-content: end;
+}
+
+#dark-button {
+	position: absolute;
+	width: 120px;
+	top: 41px;
+	right: 28px;
+}
+
+.menu {
+	border: var(--menu-border);
+	padding: 5px;
+	background: var(--bg-menu);
+}
+
+#themeMenu {
+	display: none;
+	width: 120px;
+	position: fixed;
+	right: 180px;
+	top: 30px;
+}
+
+#presetMenu {
+	display: none;
+	width: 150px;
+	position: fixed;
+	right: 164px;
+	top: 190px;
+}
