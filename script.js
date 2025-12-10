@@ -47,39 +47,6 @@ function stopWave() {
 	}
 }
 
-/* OLD THEME SWITCHER
-function switchTheme() {
-	let themeBtn = document.getElementById("theme-button");
-	let pagebody = document.body;
-	let elements = document.querySelectorAll("button, input, textarea");
-	let premenu = document.getElementById("presetMenu");
-
-	if (dark==0) {
-		// Switch to dark mode
-		themeBtn.textContent = "Light Mode";
-		pagebody.style.background = "#232323";
-		pagebody.style.color = "#f0f0f0";
-		for (let el of elements) {
-			el.style.background = "#323232";
-			el.style.color = "#f0f0f0";
-		}
-		premenu.style.background = "#454545";
-		dark = 1;
-	} else if (dark==1) {
-		// Switch to light mode
-		themeBtn.textContent = "Dark Mode";
-		pagebody.style.background = "#f0f0f0";
-		pagebody.style.color = "#333";
-		for (let el of elements) {
-			el.style.background = "";
-			el.style.color = "";
-		}
-		premenu.style.background = "#eee";
-		dark = 0;
-	}
-}
-*/
-
 
 // Code for preset menu - created by ChatGPT
 const menuButton = document.getElementById("loadPresetBtn");
@@ -103,7 +70,8 @@ popupMenu.addEventListener("click", event => {
 
 
 
-
+// Theme Definitions
+// Add new themes here
 const themes = [
 	{
 		"id": "light",
