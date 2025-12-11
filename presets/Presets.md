@@ -222,4 +222,9 @@
 
 
 
+## Classic Electrical Noise Mountain Wave
+
+**GGB:** `(sin(t vf)+sin(tan(t vf))) va`
+
+**JS:** `(Math.sin(t*vf)+Math.sin(Math.tan(t*vf)))*va`
 
