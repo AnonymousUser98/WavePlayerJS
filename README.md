@@ -24,7 +24,7 @@ You can also access some of the presets with the _Load Preset_ button, but not a
 Converting a GeoGebra formula into JavaScript that this web app will recognize is pretty easy. I recommend looking at the `Presets.md` file and comparing the GGB and JS versions of one of the presets, but here's a quick guide:
 - Change `sin()` to `Math.sin()`
   - This also applies to `cos()`, `tan()`, and other functions.
-- Change `sin^(-1)()` to `Math.asin`
+- Change `sin^(-1)()` to `Math.asin()`
   - This also applies to inverse cosine and tangent (and their hyperbolic versions).
 - Change `Pi` (or the Pi symbol) to `Math.PI` (make sure `PI` is all-caps)
 - Replace blank space with `*`
