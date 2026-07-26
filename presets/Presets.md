@@ -4,9 +4,9 @@
 
 **Square Wave:** `Math.sign(Math.sin(t*vf))*va`
 
-**Triangle Wave:** `(2/Math.PI)*Math.asin(Math.sin(2*t*vf))*va`
+**Triangle Wave:** `(2/Math.PI)*Math.asin(Math.sin(t*vf))*va`
 
-**Triangle Wave (GGB):** `(2/Pi)*asin(sin(2*t*vf))*va`
+**Triangle Wave (GGB):** `(2/Pi)*asin(sin(t*vf))*va`
 
 
 
