@@ -9,6 +9,12 @@
 **Triangle Wave (GGB):** `(2/Pi)*asin(sin(t*vf))*va`
 
 
+## Cubic Wave
+
+**GGB:** `cbrt(sin(t vf)) va`
+
+**JS:** `Math.cbrt(Math.sin(t*vf))*va`
+
 
 ## Hybrid Wave
 
